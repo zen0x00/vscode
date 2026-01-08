@@ -24,7 +24,7 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
-  "editor.fontFamily": "CaskaydiaMono Nerd Font Mono, monospace",
+  "editor.fontFamily": "JetBrainsMono Nerd Font Mono, monospace",
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
   "editor.lineHeight": 2.5,
@@ -45,39 +45,6 @@
     "FIG_NEW_SESSION": "1"
   },
   "window.titleBarStyle": "native",
-  "apc.electron": {
-    "titleBarStyle": "hiddenInset"
-  },
-  "apc.font.family": "Dank Mono",
-  "apc.listRow": {
-    "lists": [
-      "explorer-folders-view",
-      "quick-input-list",
-      "results"
-    ],
-    "height": 30
-  },
-  "apc.stylesheet": {
-    ".title-actions": "display: none !important",
-    ".quick-input-widget.show-file-icons, .editor-widget.find-widget": "box-shadow: none !important",
-    ".filematch .monaco-icon-label:before, .custom-list-row.results .monaco-list-row .monaco-icon-label:before": "background-position: 0 bottom !important",
-    ".filematch .monaco-count-badge": "padding: 5px 6px 0 6px !important",
-    ".sidebar .title-label": "padding: 0 !important",
-    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
-    ".sidebar": "border: none !important",
-    ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #67D0FF 10%, #C45DFF 100%)",
-    ".quick-input-list-row div": "display: flex !important; align-items: center !important",
-    ".panel .composite.title": "visibility: hidden !important",
-    ".title.show-file-icons .label-container .monaco-icon-label.file-icon": "padding-bottom: 6px !important",
-    ".sidebar .title-label h2": "line-height: 2.8 !important",
-    ".monaco-editor .scroll-decoration": "display: none !important",
-    ".monaco-scrollable-element > .shadow.top": "display: none !important",
-    ".monaco-split-view2 > .monaco-scrollable-element > .split-view-container": "background: #191521 !important",
-  },
-  "animations.Install-Method": "Apc Customize UI++",
-  "apc.imports": [
-    "file:///Users/igorbabko/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.1/dist/updateHandler.js"
-  ],
   "workbench.activityBar.location": "hidden",
   "window.menuBarVisibility": "toggle",
   "window.customTitleBarVisibility": "never",
@@ -88,16 +55,45 @@
   "git.openRepositoryInParentFolders": "always",
   "workbench.colorTheme": "Everforest Dark",
   "security.workspace.trust.untrustedFiles": "open",
-  "glassit.alpha": 250,
   "workbench.colorCustomizations": {
-    "terminal.background": "#00000000"
+    /* Base surfaces */
+    "editor.background": "#1F262B",
+    "editor.foreground": "#E6E3DE",
+
+    /* Selection — dusty blossom */
+    "editor.selectionBackground": "#CFA3A066",
+    "editor.inactiveSelectionBackground": "#CFA3A033",
+    "editor.selectionHighlightBackground": "#CFA3A022",
+
+    /* Cursor (APC gradient stays intact) */
+    "editorCursor.foreground": "#B07A78",
+
+    /* Line numbers */
+    "editorLineNumber.foreground": "#E6E3DE55",
+    "editorLineNumber.activeForeground": "#B07A78",
+
+    /* Search / find */
+    "editor.findMatchBackground": "#CFA3A044",
+    "editor.findMatchHighlightBackground": "#CFA3A022",
+
+    /* Diagnostics — no harsh red */
+    "editorError.foreground": "#3A2F2B",
+    "editorWarning.foreground": "#B07A78",
+    "editorInfo.foreground": "#CFA3A0",
+
+    /* Invisible UI stays invisible */
+    "editorLineHighlightBackground": "#00000000",
+    "editorOverviewRuler.border": "#00000000",
+
+    /* Terminal */
+    "terminal.background": "#00000000",
+    "terminal.foreground": "#E6E3DE",
+    "terminalCursor.foreground": "#B07A78",
+    "terminal.selectionBackground": "#CFA3A044"
   },
-  "vscode_vibrancy.disableFramelessWindow": true,
   "terminal.integrated.gpuAcceleration": "off",
-  "window.systemColorTheme": "dark",
   "window.autoDetectColorScheme": false,
   "window.controlsStyle": "custom",
-  "vscode-blur-linux.opacity": 50,
   "git.enableSmartCommit": true,
   "chat.instructionsFilesLocations": {
     ".github/instructions": true,
@@ -106,7 +102,20 @@
     "C:\\Users\\gowth\\AppData\\Local\\Temp\\postman-folder-post-response.instructions.md": true,
     "C:\\Users\\gowth\\AppData\\Local\\Temp\\postman-folder-pre-request.instructions.md": true,
     "C:\\Users\\gowth\\AppData\\Local\\Temp\\postman-http-request-post-response.instructions.md": true,
-    "C:\\Users\\gowth\\AppData\\Local\\Temp\\postman-http-request-pre-request.instructions.md": true
+    "C:\\Users\\gowth\\AppData\\Local\\Temp\\postman-http-request-pre-request.instructions.md": true,
+    "C:\\Users\\MACHEN~1\\AppData\\Local\\Temp\\postman-collections-post-response.instructions.md": true,
+    "C:\\Users\\MACHEN~1\\AppData\\Local\\Temp\\postman-collections-pre-request.instructions.md": true,
+    "C:\\Users\\MACHEN~1\\AppData\\Local\\Temp\\postman-folder-post-response.instructions.md": true,
+    "C:\\Users\\MACHEN~1\\AppData\\Local\\Temp\\postman-folder-pre-request.instructions.md": true,
+    "C:\\Users\\MACHEN~1\\AppData\\Local\\Temp\\postman-http-request-post-response.instructions.md": true,
+    "C:\\Users\\MACHEN~1\\AppData\\Local\\Temp\\postman-http-request-pre-request.instructions.md": true,
+    "/tmp/postman-collections-post-response.instructions.md": true,
+    "/tmp/postman-collections-pre-request.instructions.md": true,
+    "/tmp/postman-folder-post-response.instructions.md": true,
+    "/tmp/postman-folder-pre-request.instructions.md": true,
+    "/tmp/postman-http-request-post-response.instructions.md": true,
+    "/tmp/postman-http-request-pre-request.instructions.md": true
   },
-  "postman.mcp.notifications.postmanMCP": false,
+  "editor.defaultFormatter": "ms-dotnettools.csharp",
+  "editor.formatOnSave": true
 }
