@@ -28,6 +28,7 @@
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
   "editor.lineHeight": 2.5,
+  "editor.semanticHighlighting.enabled": true,
   "breadcrumbs.enabled": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
@@ -53,12 +54,10 @@
   "gitlens.ai.model": "vscode",
   "gitlens.ai.vscode.model": "copilot:gpt-4.1",
   "git.openRepositoryInParentFolders": "always",
-  "workbench.colorTheme": "Everforest Dark",
+  "workbench.colorTheme": "Nord",
   "security.workspace.trust.untrustedFiles": "open",
   "workbench.colorCustomizations": {
     /* Base surfaces */
-    "editor.background": "#1F262B",
-    "editor.foreground": "#E6E3DE",
 
     /* Selection — dusty blossom */
     "editor.selectionBackground": "#CFA3A066",
@@ -117,5 +116,12 @@
     "/tmp/postman-http-request-pre-request.instructions.md": true
   },
   "editor.defaultFormatter": "ms-dotnettools.csharp",
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "qt-core.additionalQtPaths": [
+    {
+      "name": "Qt-5.15.18-linux-g++_from_PATH",
+      "path": "/usr/bin/qmake"
+    }
+  ],
+  "qt-qml.doNotAskForQmllsDownload": true
 }
